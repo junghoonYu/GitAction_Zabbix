@@ -34,5 +34,6 @@ if __name__ == "__main__":
 
         repo = get_github_repo(access_token, repository_name)
         upload_github_issue(repo, issue_title, upload_contents)
+        time.sleep(2)
 
     print("Upload Github Issue Success!")
