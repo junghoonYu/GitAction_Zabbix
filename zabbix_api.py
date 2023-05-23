@@ -44,11 +44,5 @@ def get_problems(auth_token,url):
     }
     
     response = requests.post(url, json=data, headers=headers)
-    #problems = response.json()['result']
     problems = response
     return problems
-    
-    ## 결과 출력
-    #for problem in problems:
-    #    print('Problem Name:', problem['name'])
-    #    print('---')
