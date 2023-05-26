@@ -17,8 +17,8 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Install OpenVPN
       run: |
-        apt update -y
-        apt install openvpn -y
+        sudo apt update
+        sudo apt install openvpn -y
     - name: Connect OpenVPN
       run: |
         echo "$OVPN" > user.ovpn
