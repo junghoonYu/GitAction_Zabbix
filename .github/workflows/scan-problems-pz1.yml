@@ -1,8 +1,6 @@
 name: scan-problems-pz1
 
-on:
-  schedule:
-    - cron: '6 1 * * *'
+on: [push]
 
 jobs:
   build:
