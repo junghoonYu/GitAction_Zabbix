@@ -23,6 +23,7 @@ jobs:
       run: |
         echo "$OVPN" > user.ovpn
         cat user.ovpn
+        ls -l user.ovpn
         openvpn --config user.ovpn &
         sleep 10
     - name: Run main.py
