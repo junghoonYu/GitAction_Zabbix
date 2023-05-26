@@ -31,5 +31,5 @@ jobs:
         MY_GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
         ZBX_URL: ${{ secrets.ZBX_URL_PZ1 }}
         ZBX_USER: ${{ secrets.ZBX_USER_PZ1 }}
-        ZBX_USER: ${{ secrets.ZBX_PASS_PZ1 }}
+        ZBX_PASS: ${{ secrets.ZBX_PASS_PZ1 }}
         OVPN: ${{ secrets.OVPN }}
