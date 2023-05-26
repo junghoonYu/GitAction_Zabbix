@@ -1,4 +1,4 @@
-name: scan-problems-r1
+name: scan-problems-pz1
 
 on:
   schedule:
