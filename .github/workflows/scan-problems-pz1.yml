@@ -21,10 +21,7 @@ jobs:
         sudo apt install openvpn -y
     - name: Connect OpenVPN
       run: |
-        echo "$OVPN" > user.ovpn
-        cat user.ovpn
-        ls -l user.ovpn
-        openvpn --config user.ovpn &
+        openvpn --config .github/files/cloudop.ovpn &
         sleep 10
     - name: Run main.py
       run: |
@@ -34,4 +31,3 @@ jobs:
         ZBX_URL: ${{ secrets.ZBX_URL_PZ1 }}
         ZBX_USER: ${{ secrets.ZBX_USER_PZ1 }}
         ZBX_PASS: ${{ secrets.ZBX_PASS_PZ1 }}
-        OVPN: ${{ secrets.OVPN }}
