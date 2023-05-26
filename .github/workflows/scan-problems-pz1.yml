@@ -21,7 +21,7 @@ jobs:
         sudo apt install openvpn -y
     - name: Connect OpenVPN
       run: |
-        openvpn --config .github/files/cloudop.ovpn &
+        sudo openvpn --config .github/files/cloudop.ovpn &
         sleep 10
     - name: Run main.py
       run: |
