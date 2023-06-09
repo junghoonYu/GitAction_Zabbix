@@ -9,6 +9,14 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
+      - name: Install OpenVPN
+        run: |
+          sudo apt update
+          sudo apt install openvpn -y
+      - name: Connect OpenVPN
+        run: |
+          sudo openvpn --config .github/files/cloudop.ovpn &
+          sleep 10
       - uses: sonarsource/sonarqube-scan-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
