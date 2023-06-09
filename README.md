@@ -1,5 +1,7 @@
 # GitAction_Zabbix
 
+TEST
+
 Linux
 ```
 export ZBX_URL='https:/<ZABBIX_URL>/zabbix/api_jsonrpc.php'
